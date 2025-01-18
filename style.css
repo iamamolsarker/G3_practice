@@ -11,8 +11,12 @@
     --font-Dartk-03:#727272;
     --primary-color:#FF900E;
 }
+html{
+    font-size: 62.5%;
+}
 body{
     font-family: "Work Sans", serif;
+    font-size: 1.6rem;
     color: var(--Dark-01);
 }
 .boxed-container{
@@ -38,7 +42,7 @@ body{
 }
 .btn-primary{
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
     padding: 15px 30px;
     background-color: var(--primary-color);
@@ -59,14 +63,14 @@ header{
 }
 /* Nav Styles */
 .logo-container h3{
-    font-size: 45px;
+    font-size: 4.5rem;
 }
 ul li{
     list-style: none;
 }
 ul li a{
     color: var(--font-Dark-02);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     text-decoration: none;
 }
@@ -77,13 +81,13 @@ ul li a{
 }
 .hero-title{
     color: var(--font-Dark-01);
-    font-size: 64px;
+    font-size: 6.4rem;
     font-weight: 700;
     margin-bottom: 30px;
 }
 .hero-text{
     color: var(--font-Dartk-03);
-    font-size: 1rem;
+    font-size: 1.6rem;
     line-height: 1.5;
     margin-bottom: 20px;
 }
