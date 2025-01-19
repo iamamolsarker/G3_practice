@@ -59,11 +59,11 @@ body{
 /* Header Style */
 header{
     background-color: antiquewhite;
-    padding: 40px 0;
+    padding: 40px 30px;
 }
 /* Nav Styles */
 .logo-container h3{
-    font-size: 4.5rem;
+    font-size: clamp(3.5rem, 2.5vw, 4.5rem);
 }
 ul li{
     list-style: none;
@@ -81,16 +81,62 @@ ul li a{
 }
 .hero-title{
     color: var(--font-Dark-01);
-    font-size: 6.4rem;
+    font-size: clamp(3.6rem, 3.5vw, 6.4rem);
     font-weight: 700;
     margin-bottom: 30px;
 }
 .hero-text{
     color: var(--font-Dartk-03);
-    font-size: 1.6rem;
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
     line-height: 1.5;
     margin-bottom: 20px;
 }
 .hero-img-container .hero-img{
     width: 100%;
+}
+/* Tablet Responsiveness */
+@media screen and (min-width:768px) and (max-width:1024px){
+    html{
+        /* font-size: 55%; */
+    }
+    header{
+        padding: 20px;
+    }
+    .menu-container ul{
+        display: none;
+    }
+    .hamburger-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .hamburger-container span{
+        width: 30px;
+        height: 4px;
+        background-color: #131313;
+        display: inline-block;
+    }
+}
+/* Mobile Responsiveness */
+@media screen and (max-width:767px){
+    html{
+        /* font-size: 50%; */
+    }
+    header{
+        padding: 20px;
+    }
+    .menu-container ul{
+        display: none;
+    }
+    .hamburger-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .hamburger-container span{
+        width: 30px;
+        height: 4px;
+        background-color: #131313;
+        display: inline-block;
+    }
 }
